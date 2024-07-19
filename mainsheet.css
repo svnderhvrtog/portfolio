@@ -1,0 +1,71 @@
+/* reference links
+https://icolorpalette.com/color/303030
+https://www.craftz.dog
+*/
+
+
+* {
+    background-color: #242424;
+}
+
+*::selection{
+    color: #DFFF00;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.introduction {
+    background-color: #555;
+    border: solid;
+    margin: 30%;
+    margin-block: 5%;
+    border-radius: 16px;
+    padding: 2%;
+    text-align: center;
+}
+
+.textbox {
+    padding-left: 10%;
+    padding-right: 50%;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+
+h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+}
+
+
+
+.profile {
+    width: 200px;
+    height: 200px;
+    float:right;
+    margin-top: -150px;
+    margin-right: 20%;
+    border-radius: 100%;
+}
+
+.testvooroverflow {
+    white-space: break-spaces;
+    overflow: scroll;
+    box-sizing: border-box;
+    margin: 0% 10%;
+}
