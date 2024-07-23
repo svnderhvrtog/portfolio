@@ -3,7 +3,6 @@ https://icolorpalette.com/color/303030
 https://www.craftz.dog
 */
 
-
 * {
     background-color: #242424;
 }
@@ -12,12 +11,50 @@ https://www.craftz.dog
     color: #DFFF00;
 }
 
+html {
+    font-size: 100%
+}
+
 body {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+
+h2 {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1em;
-    color: #ffffff;
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.introductietekst {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .introduction {
@@ -37,22 +74,6 @@ body {
     margin-top: 100px;
 
 }
-
-h1 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 200;
-    font-size: 2em;
-}
-
-
-h2 {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1em;
-}
-
-
 
 .profile {
     width: 200px;
