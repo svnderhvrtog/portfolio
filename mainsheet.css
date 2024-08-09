@@ -22,7 +22,7 @@ body {
     font-size: 16px;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #242424;
+    background-color: #353535;
 }
 
 h1 {
@@ -50,28 +50,65 @@ h3 {
     font-size: 1rem;
 }
 
-.introductietekst {
+a {
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
-    font-size: 18px;
-    font-size: 1.1rem;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #353535;
+    text-decoration: none;
 }
 
-.introduction {
-    background-color: #555;
-    border: solid;
-    margin: 30%;
-    margin-block: 5%;
-    border-radius: 16px;
-    padding: 2%;
-    text-align: center;
+.wrapper-main {
+    width: 1200px;
+    padding: 100px 0;
+    margin: 0, auto;
+
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+/* ^ standaard instellingen allemaal goed ^ */
+
+@media only screen and (max-width: 600px) {
+    .wrapper-main {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .wrapper-main {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper-main {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper-main {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper-main {
+      width: 1200px;
+    }
 }
 
 .textbox {
+    display:flex;
     padding-left: 10%;
     padding-right: 50%;
-    margin: auto;
     margin-top: 100px;
 
 }
@@ -79,15 +116,94 @@ h3 {
 .profile {
     width: 200px;
     height: 200px;
-    float:right;
+    float: right;
     margin-top: -150px;
     margin-right: 20%;
     border-radius: 100%;
 }
 
-.testvooroverflow {
-    white-space: break-spaces;
-    overflow: scroll;
-    box-sizing: border-box;
-    margin: 0% 10%;
+/* NAV + MENU */
+nav {
+    padding: 24px 20px 24px 30px;
+    display: grid;
+    grid-template-columns: 2fr 200px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #353535;
+}
+
+nav > div > button {
+    width: 42px;
+    height: 42px;
+    margin: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    color: #353535;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav > div > button > a {
+    background-color: #F2F2F2;
+    color: #353535;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+button:hover {
+    border-radius: 5px;
+    border: solid 3px;
+    border-image: linear-gradient(to right bottom, #E3839D 0%, #F0BD95 50%, #A19EEB 100%) 1;
+}
+
+.menubuttons {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.menuitems {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin-top: 60px;
+    padding: 0 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: grid;
+    justify-content: right;
+  }
+
+.menuitem_1 {
+    padding: 16px 24px 10px 16px;
+    border: none; 
+    border-radius: 4px 4px 0px 0px;
+    color: #353535;
+    background-color: #F2F2F2; 
+}
+
+.menuitem_2 {
+    padding: 10px 24px 10px 16px;
+    border: none; 
+    border-radius: 0px 0px 0px 0px;
+    color: #353535;
+    background-color: #F2F2F2; 
+}
+
+.menuitem_3 {
+    padding: 10px 24px 16px 16px;
+    border: none; 
+    border-radius: 0px 0px 4px 4px;
+    color: #353535;
+    background-color: #F2F2F2; 
 }
