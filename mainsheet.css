@@ -3,16 +3,18 @@ https://icolorpalette.com/color/303030
 https://www.craftz.dog
 */
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 *::selection{
-    color: #DFFF00;
+    color: #F0BD95;
 }
 
 html {
-    font-size: 100%
+    font-size: 100%;
 }
 
 body {
@@ -31,8 +33,8 @@ h1 {
     font-style: normal;
     font-size: 32px;
     font-size: 2rem;
+    margin-bottom: 8px;
 }
-
 
 h2 {
     font-family: "Chakra Petch", sans-serif;
@@ -40,6 +42,7 @@ h2 {
     font-style: normal;
     font-size: 24px;
     font-size: 1.5rem;
+    margin-bottom: 8px;
 }
 
 h3 {
@@ -61,11 +64,19 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-top: 8px;
+}
+
+div > a:hover {
+        color:#A19EEB;
+        transition: all 0.5s ease;
+}
+
 .wrapper-main {
     width: 1200px;
     padding: 100px 0;
     margin: 0, auto;
-
   }
 
   header {
@@ -78,6 +89,7 @@ a {
 @media only screen and (max-width: 600px) {
     .wrapper-main {
       width: 100%;
+      padding-inline: 24px;
     }
 }
 
@@ -105,26 +117,31 @@ a {
     }
 }
 
-.textbox {
-    display:flex;
-    padding-left: 10%;
-    padding-right: 50%;
-    margin-top: 100px;
-
+.imagebox {
+    width: calc(100% - 48px);
+    height: 100%;
+    margin-left: 24px;
+    border-radius: 5px;
 }
 
-.profile {
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin-top: -150px;
-    margin-right: 20%;
-    border-radius: 100%;
+.textbox {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.github {
+    margin-top: -4px;
+}
+
+.github > a > img {
+    float:left;
+    margin-right: 8px;
+    margin-top: -1px;
 }
 
 /* NAV + MENU */
 nav {
-    padding: 24px 20px 24px 30px;
+    padding: 24px 0px 24px 24px;
     display: grid;
     grid-template-columns: 2fr 200px;
     justify-content: center;
@@ -176,7 +193,7 @@ button:hover {
     width: 200px;
     height: 300px;
     margin-top: 60px;
-    padding: 0 26px;
+    padding: 0 24px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -192,6 +209,11 @@ button:hover {
     background-color: #F2F2F2; 
 }
 
+.menuitem_1:hover{
+    color:#A19EEB;
+    transition: all 0.5s ease;
+}
+
 .menuitem_2 {
     padding: 10px 24px 10px 16px;
     border: none; 
@@ -200,10 +222,20 @@ button:hover {
     background-color: #F2F2F2; 
 }
 
+.menuitem_2:hover{
+    color:#A19EEB;
+    transition: all 0.5s ease;
+}
+
 .menuitem_3 {
     padding: 10px 24px 16px 16px;
     border: none; 
     border-radius: 0px 0px 4px 4px;
     color: #353535;
     background-color: #F2F2F2; 
+}
+
+.menuitem_3:hover{
+    color:#A19EEB;
+    transition: all 0.5s ease;
 }
