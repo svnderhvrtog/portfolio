@@ -1,3 +1,7 @@
+// Lightmode and darkmode
+
+
+// Copied from source for collapse menu
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
