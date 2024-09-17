@@ -9,6 +9,7 @@
 <meta name="author" content="Sander Hartog">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="noise.css">
 <link rel="stylesheet" href="mainsheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,12 @@
 <script src="main.js"></script>
 </head>
 
-<body class="wrapper-main">
+<body class="wrapper-main background">
 <header>
     <nav>
-      <img src="sanderhartoglogo_max.png" alt="logo from website svnder sander hartog" width="124">
+      <div class="blendmode" style="mix-blend-mode: difference;">
+        <img src="sanderhartoglogo_max.png" alt="logo from website svnder sander hartog" width="124" class="sanderlogo">
+      </div>
       <div class="menubuttons">
         <button class="btn"><i class="material-icons" style="font-size: 1.2rem;">light_mode</i></button>
         <button><a href="indexnl.html">nl</a></button>

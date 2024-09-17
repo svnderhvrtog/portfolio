@@ -1,8 +1,3 @@
-/* reference links
-https://icolorpalette.com/color/303030
-https://www.craftz.dog
-*/
-
 *,
 *::before,
 *::after {
@@ -11,6 +6,11 @@ https://www.craftz.dog
 
 *::selection{
     color: #F0BD95;
+}
+
+:root {
+    --color-white: #f2f2f2;
+    --color-black: #353535;
 }
 
 html {
@@ -23,9 +23,38 @@ body {
     font-style: normal;
     font-size: 16px;
     font-size: 1rem;
-    color: #ffffff;
-    background-color: #353535;
+    color: var(--color-black);
 }
+
+.background {
+    height: auto;
+     background: radial-gradient(#e3839d5e, #f0bc956e, #a19eeb5a);
+       animation: gradient 30s ease infinite; 
+        background-size: 400% 400%;
+    
+  }
+  @-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
 
 h1 {
     font-family: "Ubuntu", sans-serif;
@@ -69,7 +98,6 @@ div > a:hover {
 
 .wrapper-main {
     width: 1200px;
-    padding: 0px 0;
     margin: 0, auto;
   }
 
@@ -83,7 +111,6 @@ header {
 @media only screen and (max-width: 600px) {
     .wrapper-main {
       width: 100%;
-      padding-inline: 24px;
     }
 
     .textbox-1 {
@@ -250,7 +277,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #353535;
+    background-color: #ffffff33;
     z-index: 1;
 }
 
@@ -260,8 +287,8 @@ nav > div > button {
     margin: 6px;
     border: none;
     border-radius: 5px;
-    background-color: #F2F2F2;
-    color: #353535;
+    background-color: var(--color-black);
+    color: #F2F2F2;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -271,8 +298,8 @@ nav > div > button {
 }
 
 nav > div > button > a {
-    background-color: #F2F2F2;
-    color: #353535;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -341,4 +368,9 @@ button:hover {
 .menuitem_3:hover{
     color:#A19EEB;
     transition: all 0.5s ease;
+}
+
+header > nav > div > .blendmode > img {
+    z-index: 99;
+    mix-blend-mode: difference;
 }
