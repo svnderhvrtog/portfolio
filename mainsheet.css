@@ -69,9 +69,17 @@ p {
 }
 
 /* Background */
-.background {
+.background-1 {
     height: auto;
     background: radial-gradient(#e3839d5e, #f0bc956e, #a19eeb5a);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
+/* NOG UITWERKEN */
+.background-2 {
+    height: auto;
+    background: radial-gradient(#8388e35e, #9bf0956e, #d3eb9e5a);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
