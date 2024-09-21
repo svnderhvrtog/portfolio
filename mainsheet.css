@@ -1,3 +1,4 @@
+/* Pre-settings */
 *,
 *::before,
 *::after {
@@ -13,10 +14,16 @@
     --color-black: #353535;
 }
 
+.wrapper-main {
+    width: 1200px;
+    margin: 0, auto;
+}
+
 html {
     font-size: 100%;
 }
 
+/* Text etc */
 body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 200;
@@ -25,36 +32,6 @@ body {
     font-size: 1rem;
     color: var(--color-black);
 }
-
-.background {
-    height: auto;
-     background: radial-gradient(#e3839d5e, #f0bc956e, #a19eeb5a);
-       animation: gradient 30s ease infinite; 
-        background-size: 400% 400%;
-    
-  }
-  @-webkit-keyframes gradient{
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-       background-position: 0% 50%;
-    }
-  }
-  @keyframes gradient{
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-       background-position: 0% 50%;
-    }
-  }
 
 h1 {
     font-family: "Ubuntu", sans-serif;
@@ -83,7 +60,7 @@ h3 {
 }
 
 a {
-    color: #ffffff;
+    color: var(--color-black);
     text-decoration: none;
 }
 
@@ -91,23 +68,162 @@ p {
     margin-top: 8px;
 }
 
-div > a:hover {
-        color:#A19EEB;
-        transition: all 0.5s ease;
+/* Background */
+.background {
+    height: auto;
+    background: radial-gradient(#e3839d5e, #f0bc956e, #a19eeb5a);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
 }
 
-.wrapper-main {
-    width: 1200px;
-    margin: 0, auto;
+@-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
   }
+
+@keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+}
+
+/* Boxes and others */
+.imagebox {
+    width: calc(100% - 48px);
+    height: auto;
+    margin-left: 24px;
+    border-radius: 5px;
+}
+
+.textbox-2 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.github {
+    margin-top: -4px;
+}
+
+.github > a > img {
+    float:left;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+
+.projectitem {
+    margin-bottom: 30px;
+}
+
+div > a:hover {
+    color:#aaaaaa;
+    transition: all 0.5s ease;
+}
+
+/* Nav menu */
+nav {
+    padding: 24px 0px 24px 24px;
+    display: grid;
+    grid-template-columns: 2fr 200px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+}
+
+nav > div > button {
+    width: 42px;
+    height: 42px;
+    margin: 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-black);
+    color: #F2F2F2;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+nav > div > button > a {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.menubuttons {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.menuitems {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin-top: 60px;
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: grid;
+    justify-content: right;
+}
+
+.menuitem_1 {
+    padding: 16px 24px 10px 16px;
+    border: none; 
+    border-radius: 4px 4px 0px 0px;
+    color: #353535;
+    background-color: #f2f2f2c7; 
+}
+
+.menuitem_2 {
+    padding: 10px 24px 10px 16px;
+    border: none; 
+    border-radius: 0px 0px 0px 0px;
+    color: #353535;
+    background-color: #f2f2f2c7; 
+}
+
+.menuitem_3 {
+    padding: 10px 24px 16px 16px;
+    border: none; 
+    border-radius: 0px 0px 4px 4px;
+    color: #353535;
+    background-color: #f2f2f2c7; 
+}
+
+.menuitem_1:hover .menuitem_2:hover .menuitem_3:hover{
+    color:#aaaaaa;
+    transition: all 0.5s ease;
+}
 
 header {
     position: sticky;
     top: 0;
-  }
+}
 
-/* ^ standaard instellingen allemaal goed ^ */
-
+/* Media queries */
 @media only screen and (max-width: 600px) {
     .wrapper-main {
       width: 100%;
@@ -122,8 +238,13 @@ header {
         display: none;
     }
 
-    #movement {
+    .movement-1 {
         margin-top: -20px;
+        margin-bottom: 16px;
+    }
+
+    .movement-2 {
+        margin-top: 40px;
         margin-bottom: 16px;
     }
 }
@@ -142,8 +263,13 @@ header {
         padding-right: 24px;
     }
 
-    #movement {
+    .movement-1 {
         margin-top: 0px;
+        margin-bottom: 16px;
+    }
+
+    .movement-2 {
+        margin-top: -40px;
         margin-bottom: 16px;
     }
 
@@ -195,8 +321,7 @@ header {
         height: auto;
         margin-left: 24px;
         margin-right: 24px;
-    }
-    
+    }    
 }
 
 @media only screen and (min-width: 992px) {
@@ -214,13 +339,12 @@ header {
         height: auto;
         margin-left: 24px;
         margin-right: 24px;
-    }
-    
+    }   
 }
 
 @media only screen and (min-width: 1200px) {
     .wrapper-main {
-      width: 1200px;
+      width: 100%;
     }
 
     body {
@@ -234,143 +358,4 @@ header {
         margin-left: 24px;
         margin-right: 24px;
     }
-    
-}
-
-.imagebox {
-    width: calc(100% - 48px);
-    height: auto;
-    margin-left: 24px;
-    border-radius: 5px;
-}
-
-.textbox-2 {
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.github {
-    margin-top: -4px;
-}
-
-.github > a > img {
-    float:left;
-    margin-right: 8px;
-    margin-top: -1px;
-}
-
-.projectitem {
-    margin-bottom: 30px;
-}
-
-a > img:hover {
-    opacity: 70%;
-    transition: all 0.5s ease;
-}
-
-/* NAV + MENU */
-nav {
-    padding: 24px 0px 24px 24px;
-    display: grid;
-    grid-template-columns: 2fr 200px;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff33;
-    z-index: 1;
-}
-
-nav > div > button {
-    width: 42px;
-    height: 42px;
-    margin: 6px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-black);
-    color: #F2F2F2;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    z-index: 1;
-}
-
-nav > div > button > a {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 18px;
-}
-
-button:hover {
-    border-radius: 5px;
-    transform:rotate(7.5deg);
-}
-
-.menubuttons {
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.menuitems {
-    position: absolute;
-    width: 200px;
-    height: 300px;
-    margin-top: 60px;
-    padding: 0 24px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    display: grid;
-    justify-content: right;
-  }
-
-.menuitem_1 {
-    padding: 16px 24px 10px 16px;
-    border: none; 
-    border-radius: 4px 4px 0px 0px;
-    color: #353535;
-    background-color: #F2F2F2; 
-}
-
-.menuitem_1:hover{
-    color:#A19EEB;
-    transition: all 0.5s ease;
-}
-
-.menuitem_2 {
-    padding: 10px 24px 10px 16px;
-    border: none; 
-    border-radius: 0px 0px 0px 0px;
-    color: #353535;
-    background-color: #F2F2F2; 
-}
-
-.menuitem_2:hover{
-    color:#A19EEB;
-    transition: all 0.5s ease;
-}
-
-.menuitem_3 {
-    padding: 10px 24px 16px 16px;
-    border: none; 
-    border-radius: 0px 0px 4px 4px;
-    color: #353535;
-    background-color: #F2F2F2; 
-}
-
-.menuitem_3:hover{
-    color:#A19EEB;
-    transition: all 0.5s ease;
-}
-
-header > nav > div > .blendmode > img {
-    z-index: 99;
-    mix-blend-mode: difference;
 }
