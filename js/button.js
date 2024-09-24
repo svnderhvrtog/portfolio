@@ -1,20 +1,4 @@
-// Collapse menu (code written by Takuya Matsuyama)
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-
-// Mouse effect (code written by Maxim Verhoef)
+// Button transform (code by Maxim Verhoef)
 var targetIsCursor = (s, o = document) => o.querySelector(s);
 var targetIsButton = (s, o = document) => o.querySelectorAll(s);
 
