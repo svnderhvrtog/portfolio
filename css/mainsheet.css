@@ -7,6 +7,7 @@
 
 *::selection{
     color: #F0BD95;
+    background-color: #20232014;
 }
 
 :root {
@@ -71,15 +72,7 @@ p {
 /* Background */
 .background-1 {
     height: auto;
-    background: radial-gradient(#e3839d5e, #f0bc956e, #a19eeb5a);
-    animation: gradient 20s ease infinite; 
-    background-size: 400% 400%;
-}
-
-/* NOG UITWERKEN */
-.background-2 {
-    height: auto;
-    background: radial-gradient(#8388e35e, #9bf0956e, #d3eb9e5a);
+    background: radial-gradient(#e3839d3b, #f0bc956e, #a19eeb66);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
@@ -136,7 +129,7 @@ p {
 }
 
 div > a:hover {
-    color:#aaaaaa;
+    color:#707070;
     transition: all 0.5s ease;
 }
 
