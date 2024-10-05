@@ -22,6 +22,7 @@
 
 html {
     font-size: 100%;
+    overflow-x: hidden;
 }
 
 /* Text etc */
@@ -417,9 +418,36 @@ header {
     width: 600px;
 }
 
+.project-text-end {
+    text-align: end;
+    padding-top: 14px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.popup-container {
+    color: #353535;
+    display: inline-block;
+    position: relative;
+}
+
+.popup-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #ffffffb0;
+    border-radius: 5px;
+}
+
 /* Hovers */
 .static:hover {
     opacity: 0;
+}
+
+.project-text-end:hover {
+    color: var(--color-hover);
 }
 
 nav > div > div > a:hover {
@@ -487,6 +515,11 @@ section > div > div > a:hover {
     
     .project-img-desktop {
         display: none;
+    }
+
+    .popup-content {
+        top: 68%;
+        font-size: 12px;
     }
 }
 
@@ -563,6 +596,12 @@ section > div > div > a:hover {
     .project-img-desktop {
         display: none;
     }
+
+    .popup-content {
+        top: 70%;
+        font-size: 16px;
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -609,6 +648,10 @@ section > div > div > a:hover {
 
     .project-img-desktop {
         display: block;
+    }
+
+    .popup-content {
+        top: 75%;
     }
 }
 
@@ -659,6 +702,10 @@ section > div > div > a:hover {
         height: calc(23vw);
         position: relative;
     }
+
+    .popup-content {
+        top: 78%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -697,5 +744,9 @@ section > div > div > a:hover {
     .project-item {
         height: calc(19vw);
         position: relative;
+    }
+
+    .popup-content {
+        top: 80%;
     }
 }
