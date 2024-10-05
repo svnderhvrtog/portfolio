@@ -25,7 +25,7 @@ html {
     overflow-x: hidden;
 }
 
-/* Text etc */
+/* Text */
 body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 200;
@@ -73,7 +73,6 @@ p {
 li {
     margin-bottom: 8px;
     margin-right: 20px;
-    text-align: justify;
 }
 
 /* Background */
@@ -393,14 +392,12 @@ header {
     padding-left: 12px;
     padding-right: 16px;
     padding-bottom: 20px;
-    text-align: justify;
 }
 
 .project-text-p2 {
     padding-top: 8px;
     padding-right: 16px;
     padding-bottom: 20px;
-    text-align: justify;
 }
 
 .project-text-ul {
@@ -437,7 +434,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    background-color: #ffffffb0;
+    background-color: #ffffff6a;
     border-radius: 5px;
 }
 
@@ -465,6 +462,11 @@ section > div > div > a:hover {
     /* Pre-settings */
     .wrapper-main {
       width: 100%;
+    }
+
+    /* Text */
+    li {
+        text-align: left;
     }
 
     /* Home */
@@ -517,6 +519,10 @@ section > div > div > a:hover {
         display: none;
     }
 
+    .project-text-p1, .project-text-p2 {
+        text-align: left;
+        padding-left: 0px;
+    }
     .popup-content {
         top: 68%;
         font-size: 12px;
@@ -532,7 +538,7 @@ section > div > div > a:hover {
     body {
         padding-left: 5%;
         padding-right: 5%;
-    }   
+    }     
 
     /* Home */
     .sander-text-wrapper {
@@ -614,6 +620,11 @@ section > div > div > a:hover {
         padding-left: 8%;
         padding-right: 8%;
     }
+
+    /* Text */
+    li {
+        text-align: justify;
+    }
     
     /* Home */
     .profile-img-desktop {
@@ -648,6 +659,11 @@ section > div > div > a:hover {
 
     .project-img-desktop {
         display: block;
+    }
+
+    .project-text-p1, .project-text-p2 {
+        text-align: justify;
+        padding-left: 12px;
     }
 
     .popup-content {
@@ -747,6 +763,6 @@ section > div > div > a:hover {
     }
 
     .popup-content {
-        top: 80%;
+        top: 82%;
     }
 }
