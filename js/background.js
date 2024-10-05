@@ -1,7 +1,7 @@
 // Background randomizer
-const colors = ['#e7ec6816', '#e9494918', '#15fa8b1c', '#628dd238', '#b880c425', '#8a702924', '#9595952c', '#95c88314', '#564c6814', '#20232014', '#19d96628', '#5fdc5b30', '#3857c81c'];
+const colors = ['#c581811a', '#c596811a', '#c5b3811a', '#b1c5811a', '#81c5881a', '#81c5ad1a', '#81b3c51a', '#8581c51a', '#ac81c51a', '#c581ac1a', '#dcdcdc1a', '#2020201a'];
 
 document.getElementById('backgrbtn').addEventListener('click', setBg);
 function setBg() {
-    document.body.style.backgroundColor = colors[Math.floor(14*Math.random())];
+    document.body.style.backgroundColor = colors[Math.floor(12*Math.random())];
 };

@@ -78,7 +78,7 @@ li {
 /* Background */
 .background1 {
     height: auto;
-    background: radial-gradient(#887a3e3b, #282f4614, #7955614a);
+    background: radial-gradient(#887a3e2a, #282f4614, #7955614a);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
