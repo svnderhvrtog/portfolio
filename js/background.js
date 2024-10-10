@@ -3,5 +3,5 @@ const colors = ['#c581811a', '#c596811a', '#c5b3811a', '#b1c5811a', '#81c5881a',
 
 document.getElementById('backgrbtn').addEventListener('click', setBg);
 function setBg() {
-    document.body.style.backgroundColor = colors[Math.floor(12*Math.random())];
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * 13)];
 };

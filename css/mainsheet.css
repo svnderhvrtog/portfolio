@@ -153,6 +153,10 @@ nav > div > button {
     margin-right: -2px;
 }
 
+.sanderlogo {
+    margin-left: -1px;
+}
+
 .menu-items {
     position: absolute;
     width: 200px;
@@ -754,7 +758,7 @@ section > div > div > a:hover {
 
     .introduction-img {
         padding-top: 20px;
-        width: calc(25% - 48px);
+        width: calc(20% - 48px);
     }
 
     .project-item {
