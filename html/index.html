@@ -24,7 +24,7 @@
 <body class="wrapper-main background1">
 <header>
     <nav>
-        <img src="../icons/sanderlogo_max.png" alt="logo from website sander hartog" width="124" class="sanderlogo" draggable="false">
+        <img src="../icons/sanderlogo_max.png" alt="logo from website sander hartog" width="124" class="sanderlogo">
         <div class="menu-buttons">
             <button class="btn-filled magnetic"><i class="material-icons" style="font-size: 1.2rem;" href="indexnl.html">language</i></button>
             <button class="btn-filled magnetic" id='backgrbtn'><i class="material-icons" style="font-size: 1.2rem;">palette</i></button>
@@ -39,14 +39,14 @@
 </header>
 <main>
     <section class="profile-section-wrapper">
-        <img class="profile-img-mobile profile-img-mobile-wrapper" src="../images/profile_phone.jpg" alt="Sander Hartog profile picture" loading="eager" draggable="false">
-        <img class="profile-img-desktop" src="../images/profile_desktop.png" alt="Sander Hartog profile picture" loading="eager" draggable="false">
+        <img class="profile-img-mobile profile-img-mobile-wrapper" src="../images/profile_phone.jpg" alt="Sander Hartog profile picture" loading="eager">
+        <img class="profile-img-desktop" src="../images/profile_desktop.png" alt="Sander Hartog profile picture" loading="eager">
         <div class="sander-text-wrapper">
             <h1>Sander Hartog</h1>
             <h3>Upcoming digital yoda; learning with passion and trying to keep my sanity.</h3> 
             <div class="github">
                 <a href="https://github.com/svnderhvrtog" target="_blank" aria-label="Link to GitHub-page">
-                    <img src="../icons/github-mark.png" alt="Logo GitHub" width="18" height="18" loading="eager" draggable="false">
+                    <img src="../icons/github-mark.png" alt="Logo GitHub" width="18" height="18" loading="eager">
                     <p>Github</p>
                 </a>
             </div>
@@ -58,11 +58,10 @@
     <div class="home-project-text-wrapper">
         <h2>Pick your poison:</h2>
     </div>
-    <section class="project-item-section-wrapper">
-        <div class="project-item">
-            <a onclick="(alert('Still in development'))">                
-                <img src="../images/handshake.webp" alt="manga anime cover boy and girl giving handshake" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/handshake.jpg" alt="manga anime cover boy and girl giving handshake" class="home-project-img-wrapper static" width="626" height="378" loading="eager" draggable="false">
+
+    <section class="project-item-section-flex">
+        <a onclick="(alert('Still in development'))">
+            <div class="project-item"> 
                 <div class="tag-header-container">
                     <h2>A Mixed Bag</h2>
                     <div class="tag-container-total">
@@ -73,13 +72,13 @@
                         </div>
                         <p class="tag2">Development</p>
                     </div>
-                </div>
-            </a>
-        </div> 
-        <div class="project-item">
-            <a onclick="(alert('Still in development'))">                
-                <img src="../images/game.webp" alt="manga anime cover game controller" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/game.jpg" alt="manga anime cover game controller" class="home-project-img-wrapper static" width="626" height="378" loading="eager" draggable="false">
+                </div>         
+                <img src="../images/test.jpg" alt="manga anime cover boy and girl giving handshake" class="home-project-img-wrapper" width="626" height="378" loading="eager">
+            </div> 
+        </a>
+
+        <a onclick="(alert('Still in development'))">
+            <div class="project-item">
                 <div class="tag-header-container">
                     <h2>Game</h2>
                     <div class="tag-container-total">
@@ -91,12 +90,14 @@
                         <p class="tag2">Development</p>
                     </div>
                 </div>
-            </a>
-        </div>  
-        <div class="project-item">
-            <a onclick="(alert('Still in development'))">                
-                <img src="../images/flower.webp" alt="manga anime cover pink flowers" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/flower.jpg" alt="manga anime cover pink flowers" class="home-project-img-wrapper static" width="626" height="378" loading="eager" draggable="false">
+                <img src="../images/test.jpg" alt="manga anime cover game controller" class="home-project-img-wrapper static" width="626" height="378" loading="eager">
+            </div>  
+        </a>
+    </section>
+    
+    <section class="project-item-section-flex">
+        <a onclick="(alert('Still in development'))"> 
+            <div class="project-item">    
                 <div class="tag-header-container">
                     <h2>Planft</h2>
                     <div class="tag-container-total">
@@ -107,13 +108,12 @@
                         </div>
                         <p class="tag2">Development</p>
                     </div>
-                </div>
-            </a>
-        </div>  
-        <div class="project-item">
-            <a href="carebot-eng.html">                
-                <img src="../images/robot.webp" alt="manga anime cover big red robot" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/robot.jpg" alt="manga anime cover big red robot" class="home-project-img-wrapper static" width="626" height="378" loading="eager" draggable="false">
+                </div>     
+                <img src="../images/test.jpg" alt="manga anime cover pink flowers" class="home-project-img-wrapper static" width="626" height="378" loading="eager">
+            </div>  
+        </a>
+        <a href="carebot-eng.html">
+            <div class="project-item">  
                 <div class="tag-header-container">
                     <h2>Carebot</h2>
                     <div class="tag-container-total">
@@ -123,13 +123,15 @@
                         </div>
                         <p class="tag3">Design</p>
                     </div>
-                </div>
-            </a>
-        </div>  
-        <div class="project-item">
-            <a onclick="(alert('Still in development'))">                
-                <img src="../images/away.webp" alt="manga anime cover spirited away susuwatari" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/away.jpg" alt="manga anime cover spirited away susuwatari" class="home-project-img-wrapper static" width="626" height="378" loading="lazy" draggable="false">
+                </div>          
+                <img src="../images/carebot-home-cover-eng.jpg" alt="manga anime cover big red robot" class="home-project-img-wrapper static" width="626" height="378" loading="eager">
+            </div>
+        </a>
+    </section>
+    
+    <section class="project-item-section-flex">
+        <a href="select-eng.html">
+            <div class="project-item">
                 <div class="tag-header-container">
                     <h2>Select</h2>
                     <div class="tag-container-total">
@@ -140,12 +142,11 @@
                         <p class="tag3">Design</p>
                     </div>
                 </div>
-            </a>
-        </div>  
-        <div class="project-item">
-            <a onclick="(alert('Still in development'))">                
-                <img src="../images/car.webp" alt="manga anime cover car driving on the road" class="home-project-img-wrapper" width="626" height="378" loading="lazy" draggable="false">  
-                <img src="../images/car.jpg" alt="manga anime cover car driving on the road" class="home-project-img-wrapper static" width="626" height="378" loading="lazy" draggable="false">
+                <img src="../images/select-home-cover-eng.jpg" alt="manga anime cover spirited away susuwatari" class="home-project-img-wrapper static" width="626" height="378" loading="lazy">
+            </div>  
+        </a>
+        <a onclick="(alert('Still in development'))">
+            <div class="project-item">
                 <div class="tag-header-container">
                     <h2>Infotainment System</h2>
                     <div class="tag-container-total">
@@ -156,8 +157,9 @@
                         <p class="tag3">Design</p>
                     </div>
                 </div>
-            </a>
-        </div> 
+                <img src="../images/test.jpg" alt="manga anime cover car driving on the road" class="home-project-img-wrapper static" width="626" height="378" loading="lazy">
+            </div>
+        </a> 
     </section>
 </main>
 <script src="../js/background.js"></script>

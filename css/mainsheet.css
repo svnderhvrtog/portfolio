@@ -75,6 +75,10 @@ li {
     margin-right: 20px;
 }
 
+img {
+    pointer-events: none;
+}
+
 /* Background */
 .background1 {
     height: auto;
@@ -86,6 +90,13 @@ li {
 .background2 {
     height: auto;
     background: radial-gradient(#2b191e3b, #2f251d6e, #17162066);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
+.background3 {
+    height: auto;
+    background: radial-gradient(#5b374062, #5f483660, #46456a5f);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
@@ -213,8 +224,10 @@ header {
     width: calc(100% - 48px);
     height: auto;
     margin-left: 24px;
-    position: absolute;
-   
+}
+
+.project-item {
+    padding-bottom: 24px;
 }
 
 .home-project-text-wrapper {
@@ -262,12 +275,13 @@ header {
 
 .tag-header-container {
     width: calc(100% - 48px);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.502);
     padding-inline: 20px;
-    padding-block: 10px;
+    padding-block-start: 1px;
+    padding-block-end: 8px;
     margin-left: 24px;
     margin-right: 24px;
-    position: absolute;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .tag-container {
@@ -296,6 +310,18 @@ header {
     margin-inline: 24px;
     padding-top: 26px;
     padding-bottom: 34px;
+    padding-inline: 20px;
+    background-color: #ffffffa5;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.introduction-main-title2 {
+    text-align: center;
+    margin-top: -224px;
+    margin-bottom: 24px;
+    margin-inline: 24px;
+    padding-top: 10px;
+    padding-bottom: 18px;
     padding-inline: 20px;
     background-color: #ffffffa5;
     border-radius: 0px 0px 5px 5px;
@@ -487,8 +513,12 @@ section > div > div > a:hover {
         margin: 0%;
         padding-left: 24px;
         padding-right: 24px;
-        margin-top: -20px;
-        margin-bottom: 16px;
+        margin-top: -16px;
+        margin-bottom: 24px;
+    }
+
+    .project-item-section-flex {
+        display: block;
     }
 
     /* Tags */
@@ -508,11 +538,6 @@ section > div > div > a:hover {
     .introduction-img {
         padding-top: 20px;
         width: calc(36% - 48px);
-    }
-
-    .project-item {
-        height: calc(60vw);
-        position: relative;
     }
 
     .project-img-mobile {
@@ -594,11 +619,6 @@ section > div > div > a:hover {
         width: calc(30% - 48px);
     }
 
-    .project-item {
-        height: calc(55vw);
-        position: relative;
-    }
-
     .project-img-mobile {
         display: block;
     }
@@ -652,11 +672,6 @@ section > div > div > a:hover {
         width: calc(28% - 48px);
     }
 
-    .project-item {
-        height: calc(52vw);
-        position: relative;
-    }
-
     .project-img-mobile {
         display: none;
     }
@@ -694,10 +709,10 @@ section > div > div > a:hover {
         margin-right: 24px;
     }
 
-    .project-item-section-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    } 
+    .project-item-section-flex {
+        display: flex;
+        flex-direction: row;
+    }
     
     /* Tags */
     .tag1, .tag2, .tag3, .tag4 {
@@ -716,11 +731,6 @@ section > div > div > a:hover {
     .introduction-img {
         padding-top: 20px;
         width: calc(25% - 48px);
-    }
-
-    .project-item {
-        height: calc(23vw);
-        position: relative;
     }
 
     .popup-content {
@@ -760,12 +770,6 @@ section > div > div > a:hover {
         padding-top: 20px;
         width: calc(20% - 48px);
     }
-
-    .project-item {
-        height: calc(19vw);
-        position: relative;
-    }
-
     .popup-content {
         top: 82%;
     }
