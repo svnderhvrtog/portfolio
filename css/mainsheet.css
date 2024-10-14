@@ -82,7 +82,7 @@ img {
 /* Background */
 .background1 {
     height: auto;
-    background: radial-gradient(#887a3e2a, #282f4614, #7955614a);
+    background: radial-gradient(#ac9b5025, #47516e16, #be83975c);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
