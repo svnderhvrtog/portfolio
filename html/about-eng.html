@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head> 
+<title>Sander Hartog - About Me</title>
+<meta charset="utf-8">
+<meta name="description" content="Explore the world of Sander Hartog – What’s the story behind the code?">
+<meta name="keywords" content="Front-end, Developer, Development">
+<meta name="author" content="Sander Hartog">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="../icons/sanderhartog_featured.jpg">
+<link rel="icon" href="../icons/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/mainsheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hahmlet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="wrapper-main">
+    <header>
+        <nav>
+            <img src="../icons/sanderlogo_max.png" alt="logo from website sander hartog" width="124" class="sanderlogo">
+            <div class="menu-buttons">
+                <button class="btn-filled magnetic"><i class="material-icons" style="font-size: 1.2rem;" onclick="window.location='about-nl.html'">language</i></button>
+                <button class="btn-filled magnetic back" onclick="window.location='index.html'">Go back</button>
+          </div>
+        </nav>
+    </header>
+
+<section id="about-introduction">
+        <a id="start">
+            <img src="../images/about-quiz.gif" alt="cover photo project carebot" class="about-cover-img" loading="lazy"> 
+            <video width="1000" height="600" class="video-hidden"></video>
+        </a>
+</section>
+
+<section id="question1" class="question-section-wrap">
+<div>
+    <h2 class="project-item about-highlight">What is my favourite manga?</h2>
+    <img src="../images/about-question1.png" alt="cover photo project carebot" class="question-cover-img" loading="lazy"> 
+</div>
+    <div class="project-item-section-flex2">
+        <div id="q1a1" class="anwser1">
+            <p>Haikyu!!</p>
+        </div>
+        <div id="q1a2" class="anwser2">
+            <p>Dragonball Z</p>
+        </div>
+    </div>
+    <div class="project-item-section-flex2">
+        <div id="q1a3" class="anwser3">
+            <p>Vinland Saga</p>
+        </div>
+        <div id="q1a4" class="anwser4">
+            <p>Yotsuba&amp;!</p>
+        </div>
+    </div>
+</section>
+
+<section id="rightanswer1" class="question-section-wrap">
+        <h2 class="project-item about-highlight">Great! Have you read it already? You should, wait...</h2>
+        <img src="../images/about-answer1.webp" class="question-cover-img2" loading="lazy">
+        <h2 class="project-item about-highlight">You must!</h2>
+        <div class="project-internal-content-wrapper">
+            <a href="select-eng.html">
+            <h3 class="project-text-end">Next question</h3>
+            </a>
+        </div>
+</section>
+
+<section id="wronganswer1" class="question-section-wrap">
+    <h2 class="project-item about-highlight">Oops, good guess but that's wrong!</h2>
+    <img src="../images/about-answer1.webp" class="question-cover-img2" loading="lazy">
+    <h2 class="project-item about-highlight"> My favorite manga is Vinland Saga.</h2>
+    <div class="project-internal-content-wrapper">
+        <a href="select-eng.html">
+        <h3 class="project-text-end">Next question</h3>
+        </a>
+    </div>
+</section>
+
+<script src="../js/button.js"></script>
+<script src="../js/about.js"></script>
+</body>
