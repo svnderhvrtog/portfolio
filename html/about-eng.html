@@ -4,8 +4,8 @@
 <head> 
 <title>Sander Hartog - About Me</title>
 <meta charset="utf-8">
-<meta name="description" content="Explore the world of Sander Hartog – What’s the story behind the code?">
-<meta name="keywords" content="Front-end, Developer, Development">
+<meta name="description" content="Explore the world of Sander Hartog – Who's the person behind the code?">
+<meta name="keywords" content="Sander, Hartog, About Me, Quiz, Contact">
 <meta name="author" content="Sander Hartog">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:image" content="../icons/sanderhartog_featured.jpg">
@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hahmlet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="wrapper-main">
+<body class="wrapper-main background4">
     <header>
         <nav>
             <img src="../icons/sanderlogo_max.png" alt="logo from website sander hartog" width="124" class="sanderlogo">
@@ -34,56 +34,181 @@
 
 <section id="about-introduction">
         <a id="start">
-            <img src="../images/about-quiz.gif" alt="cover photo project carebot" class="about-cover-img" loading="lazy"> 
+            <img src="../images/about-quiz.gif" alt="cover gif about me quiz" class="about-cover-img" loading="lazy"> 
             <video width="1000" height="600" class="video-hidden"></video>
         </a>
 </section>
 
+<!--Don't you dare to cheat! ( ✧≖ ͜ʖ≖)-->
 <section id="question1" class="question-section-wrap">
 <div>
-    <h2 class="project-item about-highlight">What is my favourite manga?</h2>
-    <img src="../images/about-question1.png" alt="cover photo project carebot" class="question-cover-img" loading="lazy"> 
+    <h2 class="project-item about-highlight">Which manga holds the title of my all-time favorite?</h2>
+    <img src="../images/about-question1.png" alt="cover photo of different manga/anime series" class="question-cover-img" loading="lazy"> 
 </div>
     <div class="project-item-section-flex2">
-        <div id="q1a1" class="anwser1">
+        <div class="anwser1" onclick="q1aWrongFunct()">
             <p>Haikyu!!</p>
         </div>
-        <div id="q1a2" class="anwser2">
-            <p>Dragonball Z</p>
+        <div class="anwser2" onclick="q1aWrongFunct()">
+            <p>Hirayasumi</p>
         </div>
     </div>
     <div class="project-item-section-flex2">
-        <div id="q1a3" class="anwser3">
+        <div class="anwser3" onclick="q1aCorrectFunct()">
             <p>Vinland Saga</p>
         </div>
-        <div id="q1a4" class="anwser4">
+        <div class="anwser4" onclick="q1aWrongFunct()">
             <p>Yotsuba&amp;!</p>
         </div>
     </div>
 </section>
 
 <section id="rightanswer1" class="question-section-wrap">
-        <h2 class="project-item about-highlight">Great! Have you read it already? You should, wait...</h2>
-        <img src="../images/about-answer1.webp" class="question-cover-img2" loading="lazy">
-        <h2 class="project-item about-highlight">You must!</h2>
-        <div class="project-internal-content-wrapper">
-            <a href="select-eng.html">
-            <h3 class="project-text-end">Next question</h3>
-            </a>
-        </div>
+        <h2 class="project-item about-highlight">Correct! Have you had the chance to read it?</h2>
+        <img src="../images/about-answer1.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+        <h2 class="project-item about-highlight">You should—no, you need to, seriously!</h2>
+        <button class="btn-filled next" onclick="q1NextQuestionFunct()">Next question</button>
 </section>
 
 <section id="wronganswer1" class="question-section-wrap">
     <h2 class="project-item about-highlight">Oops, good guess but that's wrong!</h2>
-    <img src="../images/about-answer1.webp" class="question-cover-img2" loading="lazy">
-    <h2 class="project-item about-highlight"> My favorite manga is Vinland Saga.</h2>
-    <div class="project-internal-content-wrapper">
-        <a href="select-eng.html">
-        <h3 class="project-text-end">Next question</h3>
-        </a>
-    </div>
+    <img src="../images/about-answer1.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+    <h2 class="project-item about-highlight">I love the story of Vinland Saga</h2>
+    <button class="btn-filled next" onclick="q1NextQuestionFunct()">Next question</button>
 </section>
 
+<!--Don't you dare to cheat! ( ✧≖ ͜ʖ≖)-->
+<section id="question2" class="question-section-wrap">
+    <div>
+        <h2 class="project-item about-highlight">Which sport do I enjoy the most?</h2>
+        <img src="../images/about-question2.png" alt="cover photo of different manga/anime series" class="question-cover-img" loading="lazy"> 
+    </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser1" onclick="q2aCorrectFunct()">
+                <p>Climbing</p>
+            </div>
+            <div class="anwser2" onclick="q2aWrongFunct()">
+                <p>Soccer</p>
+            </div>
+        </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser3" onclick="q2aWrongFunct()">
+                <p>Swimming</p>
+            </div>
+            <div class="anwser4" onclick="q2aWrongFunct()">
+                <p>Jiu-jitsu</p>
+            </div>
+    </div>
+</section>
+    
+<section id="rightanswer2" class="question-section-wrap">
+            <h2 class="project-item about-highlight">You've reached the summit</h2>
+            <img src="../images/about-answer2.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+            <h2 class="project-item about-highlight">Well done!</h2>
+            <button class="btn-filled next" onclick="q2NextQuestionFunct()">Next question</button>
+</section>
+    
+    <section id="wronganswer2" class="question-section-wrap">
+        <h2 class="project-item about-highlight">You've hit the ground...</h2>
+        <img src="../images/about-answer2.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+        <h2 class="project-item about-highlight">It's climbing</h2>
+        <button class="btn-filled next" onclick="q2NextQuestionFunct()">Next question</button>
+    </section>
+
+<!--Don't you dare to cheat! ( ✧≖ ͜ʖ≖)-->
+<section id="question3" class="question-section-wrap">
+    <div>
+        <h2 class="project-item about-highlight">What would you say is my favorite meal?</h2>
+        <img src="../images/about-question3.png" alt="cover photo of different manga/anime series" class="question-cover-img" loading="lazy"> 
+    </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser1" onclick="q3aWrongFunct()">
+                <p>Ramen noodles</p>
+            </div>
+            <div class="anwser2" onclick="q3aWrongFunct()">
+                <p>Miso soup</p>
+            </div>
+        </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser3" onclick="q3aWrongFunct()">
+                <p>Poke</p>
+            </div>
+            <div class="anwser4" onclick="q3aCorrectFunct()">
+                <p>All of them</p>
+            </div>
+    </div>
+</section>
+    
+    <section id="rightanswer3" class="question-section-wrap">
+            <h2 class="project-item about-highlight">Ding ding!</h2>
+            <img src="../images/about-answer3.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+            <h2 class="project-item about-highlight">It's my life elixer</h2>
+            <button class="btn-filled next" onclick="q3NextQuestionFunct()">Next question</button>
+    </section>
+    
+    <section id="wronganswer3" class="question-section-wrap">
+        <h2 class="project-item about-highlight">I just can't pick one...</h2>
+        <img src="../images/about-answer3.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+        <h2 class="project-item about-highlight">Must eat all of them!</h2>
+        <button class="btn-filled next" onclick="q3NextQuestionFunct()">Next question</button>
+    </section>
+
+<!--Don't you dare to cheat! ( ✧≖ ͜ʖ≖)-->
+<section id="question4" class="question-section-wrap">
+    <div>
+        <h2 class="project-item about-highlight">What style of music do I listen most often?</h2>
+        <img src="../images/about-question4.jpg" alt="cover photo of different manga/anime series" class="question-cover-img" loading="lazy"> 
+    </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser1" onclick="q4aCorrectFunct()">
+                <p>Lofi</p>
+            </div>
+            <div class="anwser2" onclick="q4aWrongFunct()">
+                <p>Rock</p>
+            </div>
+        </div>
+        <div class="project-item-section-flex2">
+            <div class="anwser3" onclick="q4aWrongFunct()">
+                <p>K-Pop</p>
+            </div>
+            <div class="anwser4" onclick="q4aWrongFunct()">
+                <p>Deep House</p>
+            </div>
+    </div>
+</section>
+    
+    <section id="rightanswer4" class="question-section-wrap">
+            <h2 class="project-item about-highlight">Way to go!</h2>
+            <img src="../images/about-answer4.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+            <h2 class="project-item about-highlight">Good taste, huh?</h2>
+            <button class="btn-filled next" onclick="continueFunct()">Continue</button>
+    </section>
+    
+    <section id="wronganswer4" class="question-section-wrap">
+        <h2 class="project-item about-highlight">Yikes, no way</h2>
+        <img src="../images/about-answer4.webp" alt="battle scene from anime Vinland Saga" class="question-cover-img2" loading="lazy">
+        <h2 class="project-item about-highlight">I love me some lofi background music</h2>
+        <button class="btn-filled next" onclick="continueFunct()">Continue</button>
+    </section>
+
+<section id="about-final"> 
+    <div id="scoringtext" class="question-section-wrap"></div>
+    <h2 class="question-section-wrap project-item about-highlight">__________________________________________</h2>
+    <br>
+    <br>
+    <div class="about-end-wrapper">
+        <img src="../images/about-me-img.png" class="profile-img-desktop about-me-img">
+        <img class="profile-img-mobile profile-img-mobile-wrapper" src="../images/profile_phone.jpg" alt="Sander Hartog profile picture" loading="eager">
+        <div>
+            <h2 class="question-section-wrap">Even more about me</h2>
+            <br>
+            <p class="project-text-p3">Well, I'm Sander—as you probably know by now. I graduated as a UX designer from the University of Applied Sciences in Rotterdam. During my study I found an interest in development and coding, which I’m currently honing. My goal? To become what I like to call a 'Digital Yoda.' You’ve come across that term by now, so, what do I mean by that? I view all forms of media as extensions of my skills. Over the past decade, I’ve mastered various crafts, including photography, videography, art and design. These abilities allow me to create and express myself through digital experiences. Being a 'Digital Yoda' simply means I’m a top player in the digital world. Go big or go home, right?</p>
+            <p class="project-text-p3">Interested in learning more about me or collaborating on projects? Don’t hesitate to reach out!</p>
+            <br>
+            <button class="btn-filled next" onclick="window.location='mailto:connect@sanderhartog.dev'">Contact me</button>
+        </div>
+    </div>
+</section>
 <script src="../js/button.js"></script>
 <script src="../js/about.js"></script>
 </body>

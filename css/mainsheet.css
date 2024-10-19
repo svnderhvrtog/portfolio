@@ -106,6 +106,13 @@ figure {
     background-size: 400% 400%;
 }
 
+.background4 {
+    height: auto;
+    background: radial-gradient(#be939e62, #c4af9e60, #90b99e5f);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
 @-webkit-keyframes gradient{
     0% {
       background-position: 0 50%;
@@ -159,6 +166,18 @@ nav > div > button {
 
 .back {
     width: 96px;
+}
+
+.next {
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
 }
 
 .menu-buttons {
@@ -304,15 +323,7 @@ header {
     display: block;
 }
 
-#question1 {
-    display: none;
-}
-
-#rightanswer1 {
-    display: none;
-}
-
-#wronganswer1 {
+#question1, #rightanswer1, #wronganswer1, #question2, #rightanswer2, #wronganswer2, #question3, #rightanswer3, #wronganswer3, #question4, #rightanswer4, #wronganswer4, #about-final{
     display: none;
 }
 
@@ -324,6 +335,17 @@ header {
     position: absolute;
 }
 
+.about-me-container {
+    background-color: #353535b0;
+    color: var(--color-white);
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.about-me-img {
+    width: 100%;
+}
+
 .about-cover-img {
     object-fit: cover;
     width: calc(100% - 48px);
@@ -332,14 +354,7 @@ header {
 
 .about-highlight {
    font-weight: 500;
-}
-
-.question-cover-img {
-    object-fit: cover;
-    width: calc(100% - 48px);
-    height: 43vh;
-    margin: 0px;
-    padding-bottom: 16px;
+   margin-inline: 10px;
 }
 
 .question-cover-img2 {
@@ -352,21 +367,6 @@ header {
 
 .question-section-wrap {
     text-align: center;
-}
-
-.anwser1, .anwser2, .anwser3, .anwser4 {
-    font-size: 20px;
-    font-weight: 500;
-    width: 100vh;
-    height: 100px;
-    text-align: center;
-    margin-inline: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-top: 5vh;
-    padding-bottom: 9vh;
-    color: #ffffff;
-    border-radius: 5px;
 }
 
 .anwser1 {
@@ -525,6 +525,11 @@ header {
     padding-bottom: 20px;
 }
 
+.project-text-p3 {
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
 .project-text-ul {
     margin-top: -20px;
 }
@@ -622,6 +627,21 @@ section > div > div > a:hover {
     }
 
     /* About me */
+    .anwser1, .anwser2, .anwser3, .anwser4 {
+        font-size: 16px;
+        font-weight: 500;
+        width: calc(100% - 48px);
+        margin-inline: 24px;
+        height: 16px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 3vh;
+        padding-bottom: 7vh;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
    .about-cover-img {
     width: calc(80% - 48px);
     height: auto;
@@ -629,6 +649,29 @@ section > div > div > a:hover {
     top: 50%;
     left: 48%;
     transform: translate(-50%, -50%);
+    }
+
+    .about-end-wrapper {
+        display: block;
+        margin-inline: 24px;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .question-cover-img {
+        object-fit: cover;
+        width: calc(100% - 48px);
+        height: 27vh;
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
+    .project-item-section-flex2 {
+        display: block;
+    }
+
+    .about-me-img {
+        display: none;
     }
 
     /* Project */
@@ -657,6 +700,12 @@ section > div > div > a:hover {
         text-align: left;
         padding-left: 0px;
     }
+
+    .project-text-p3 {
+        text-align: left;
+        padding-left: 0px;
+    }
+
     .popup-content {
         top: 68%;
         font-size: 12px;
@@ -718,6 +767,40 @@ section > div > div > a:hover {
         top: 50%;
         left: 48%;
         transform: translate(-50%, -50%);
+    }
+
+    .about-end-wrapper {
+        display: block;
+        margin-inline: 24px;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .question-cover-img {
+        object-fit: cover;
+        width: calc(100% - 48px);
+        height: 35vh;
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
+    .anwser1, .anwser2, .anwser3, .anwser4 {
+        font-size: 16px;
+        font-weight: 500;
+        width: calc(100% - 48px);
+        margin-inline: 24px;
+        height: 16px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 3vh;
+        padding-bottom: 7vh;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .about-me-img {
+        display: none;
     }
 
     /* Project */
@@ -783,6 +866,40 @@ section > div > div > a:hover {
         transform: translate(-50%, -50%);
     }
 
+    .about-end-wrapper {
+        display: flex;
+        margin-inline: 24px;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .question-cover-img {
+        object-fit: cover;
+        width: calc(100% - 48px);
+        height: 43vh;
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
+    .anwser1, .anwser2, .anwser3, .anwser4 {
+        font-size: 16px;
+        font-weight: 500;
+        width: calc(100% - 48px);
+        margin-inline: 24px;
+        height: 16px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 3vh;
+        padding-bottom: 7vh;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .about-me-img {
+        display: block;
+    }
+
     /* Project */
     .introduction-desktop {
         display: none;
@@ -806,6 +923,11 @@ section > div > div > a:hover {
     }
 
     .project-text-p1, .project-text-p2 {
+        text-align: justify;
+        padding-left: 12px;
+    }
+
+    .project-text-p3 {
         text-align: justify;
         padding-left: 12px;
     }
@@ -851,6 +973,21 @@ section > div > div > a:hover {
     }
 
     /* About me */
+    .anwser1, .anwser2, .anwser3, .anwser4 {
+        font-size: 20px;
+        font-weight: 500;
+        width: 100vh;
+        height: 100px;
+        text-align: center;
+        margin-inline: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-top: 5vh;
+        padding-bottom: 9vh;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+
     .about-cover-img {
         width: calc(45% - 48px);
         height: auto;
