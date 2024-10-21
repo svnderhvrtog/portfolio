@@ -1,5 +1,5 @@
-// About me page 
-// Don't you dare to cheat! ( ✧≖ ͜ʖ≖)
+// About Quiz
+// Waag het niet om vals te spelen! ( ✧≖ ͜ʖ≖)
 
 // Start variables
 const start = document.getElementById('start').addEventListener('click', beginquiz);
@@ -55,7 +55,6 @@ function q1NextQuestionFunct() {
     rightAnswer1.style.display = "none";
     wrongAnswer1.style.display = "none";
     question2.style.display = "block";
-    console.log(points)
 }
 
 // Question 2 functions
@@ -75,7 +74,6 @@ function q2NextQuestionFunct() {
     rightAnswer2.style.display = "none";
     wrongAnswer2.style.display = "none";
     question3.style.display = "block";
-    console.log(points)
 }
 
 // Question 3 functions
@@ -95,10 +93,9 @@ function q3NextQuestionFunct() {
     rightAnswer3.style.display = "none";
     wrongAnswer3.style.display = "none";
     question4.style.display = "block";
-    console.log(points)
 }
 
-// Question 3 functions
+// Question 4 functions
 function q4aWrongFunct() {
     question4.style.display = "none";
     wrongAnswer4.style.display = "block";
@@ -111,21 +108,26 @@ function q4aCorrectFunct() {
     points += 1;
 }
 
+// Total and return function
 function continueFunct() {
     rightAnswer4.style.display = "none";
     wrongAnswer4.style.display = "none";
     aboutFinal.style.display = "block";
-    console.log(points)
     if (points == 0) {
-        scoringText.innerHTML += "<h2 class='about-highlight'>You make me cry! No correct answer at all</h2>"
+        scoringText.innerHTML = "<h2 class='about-highlight'>Ik moet bijna huilen! Geen een correct antwoord</h2>"
     } else if (points == 1) {
-        scoringText.innerHTML += "<h2 class='about-highlight'>Well at least you've got 1 correct answer</h2>"
+        scoringText.innerHTML = "<h2 class='about-highlight'>Really? Nou ja, je hebt 1 goed antwoord</h2>"
     } else if (points == 2) {
-        scoringText.innerHTML += "<h2 class='about-highlight'>Not too bad! You've got 2 correct answers</h2>"
+        scoringText.innerHTML = "<h2 class='about-highlight'>Niet slecht! Je hebt 2 goede antwoorden</h2>"
     } else if (points == 3) {
-        scoringText.innerHTML += "<h2 class='about-highlight'>Very good! You've got 3 correct answers</h2>"
+        scoringText.innerHTML = "<h2 class='about-highlight'>Ken je mij al? Je hebt 3 van de 4 goed!</h2>"
     } else if (points == 4) {
-        scoringText.innerHTML += "<h2 class='about-highlight'>You've got 4 out of 4, are you a stalker?!</h2>"
+        scoringText.innerHTML = "<h2 class='about-highlight'>Je hebt 4 van de 4 goed, ben je een stalker?!</h2>"
     }
+}
 
+function returnFunct() {
+    aboutFinal.style.display = "none";
+    introduction.style.display = "block";
+    points = 0;
 }

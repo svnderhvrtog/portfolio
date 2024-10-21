@@ -108,7 +108,7 @@ figure {
 
 .background4 {
     height: auto;
-    background: radial-gradient(#be939e62, #c4af9e60, #90b99e5f);
+    background: radial-gradient(#7bc99213, #435da51e, #cd597a4f);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
@@ -169,6 +169,31 @@ nav > div > button {
 }
 
 .next {
+    width: calc(100% - 48px);
+    margin-top: 4px;
+    height: 64px;
+    border: solid;
+    border-color: var(--color-black);
+    border-radius: 5px;
+    background-color: #ffffff00;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.return {
+    height: 64px;
+    border: solid;
+    border-color: var(--color-black);
+    border-radius: 5px;
+    background-color: #ffffff00;
+    color: var(--color-black);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.contact {
     width: 100%;
     height: 64px;
     border: none;
@@ -319,6 +344,12 @@ header {
 }
 
 /* About me */
+.light {
+    margin-top: -14px;
+    margin-bottom: 24px;
+    color: #353535aa;
+}
+
 #start {
     display: block;
 }
@@ -335,21 +366,29 @@ header {
     position: absolute;
 }
 
-.about-me-container {
-    background-color: #353535b0;
-    color: var(--color-white);
-    padding: 24px;
-    border-radius: 10px;
-}
-
 .about-me-img {
-    width: 100%;
+    width: calc(100% - 48px);
+    height: 60vh;
+    margin-left: 24px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 32px;
 }
 
 .about-cover-img {
     object-fit: cover;
     width: calc(100% - 48px);
     height: 100vh;
+}
+
+#scoringtext {
+    margin-top: 32vh;
+}
+
+.about-me-line {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 2%;
 }
 
 .about-highlight {
@@ -360,7 +399,7 @@ header {
 .question-cover-img2 {
     object-fit: cover;
     width: calc(100% - 48px);
-    height: 56vh;
+    height: 58vh;
     margin: 0px;
     padding-bottom: 16px;
 }
@@ -527,7 +566,6 @@ header {
 
 .project-text-p3 {
     padding-top: 8px;
-    padding-bottom: 20px;
 }
 
 .project-text-ul {
@@ -661,7 +699,7 @@ section > div > div > a:hover {
     .question-cover-img {
         object-fit: cover;
         width: calc(100% - 48px);
-        height: 27vh;
+        height: 29vh;
         margin: 0px;
         padding-bottom: 16px;
     }
@@ -670,8 +708,12 @@ section > div > div > a:hover {
         display: block;
     }
 
-    .about-me-img {
-        display: none;
+    .about-me-line {
+        padding-inline: 24px;
+    }
+
+    .return {
+        width: calc(100% - 48px);
     }
 
     /* Project */
@@ -704,6 +746,7 @@ section > div > div > a:hover {
     .project-text-p3 {
         text-align: left;
         padding-left: 0px;
+        padding-right: 4px;
     }
 
     .popup-content {
@@ -779,7 +822,7 @@ section > div > div > a:hover {
     .question-cover-img {
         object-fit: cover;
         width: calc(100% - 48px);
-        height: 35vh;
+        height: 29vh;
         margin: 0px;
         padding-bottom: 16px;
     }
@@ -799,8 +842,12 @@ section > div > div > a:hover {
         border-radius: 5px;
     }
 
-    .about-me-img {
-        display: none;
+    .about-me-line {
+        padding-inline: 36px;
+    }
+
+    .return {
+        width: calc(100% - 72px);
     }
 
     /* Project */
@@ -876,7 +923,7 @@ section > div > div > a:hover {
     .question-cover-img {
         object-fit: cover;
         width: calc(100% - 48px);
-        height: 43vh;
+        height: 29vh;
         margin: 0px;
         padding-bottom: 16px;
     }
@@ -896,8 +943,12 @@ section > div > div > a:hover {
         border-radius: 5px;
     }
 
-    .about-me-img {
-        display: block;
+    .about-me-line {
+        padding-inline: 64px;
+    }
+
+    .return {
+        width: calc(100% - 128px);
     }
 
     /* Project */
@@ -929,7 +980,7 @@ section > div > div > a:hover {
 
     .project-text-p3 {
         text-align: justify;
-        padding-left: 12px;
+        padding-right: 48px;
     }
 
     .popup-content {
@@ -997,6 +1048,22 @@ section > div > div > a:hover {
         transform: translate(-50%, -50%);
     }
 
+    .question-cover-img {
+        object-fit: cover;
+        width: calc(100% - 48px);
+        height: 45vh;
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
+    .about-me-line {
+        padding-inline: 90px;
+    }
+
+    .return {
+        width: calc(100% - 180px);
+    }
+
     /* Project */
     .introduction-desktop {
         display: none;
@@ -1043,6 +1110,14 @@ section > div > div > a:hover {
         top: 50%;
         left: 48%;
         transform: translate(-50%, -50%);
+    }
+
+    .about-me-line {
+        padding-inline: 120px;
+    }
+
+    .return {
+        width: calc(100% - 240px);
     }
 
     /* Project */
