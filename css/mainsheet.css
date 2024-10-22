@@ -168,43 +168,6 @@ nav > div > button {
     width: 96px;
 }
 
-.next {
-    width: calc(100% - 48px);
-    margin-top: 4px;
-    height: 64px;
-    border: solid;
-    border-color: var(--color-black);
-    border-radius: 5px;
-    background-color: #ffffff00;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-}
-
-.return {
-    height: 64px;
-    border: solid;
-    border-color: var(--color-black);
-    border-radius: 5px;
-    background-color: #ffffff00;
-    color: var(--color-black);
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-}
-
-.contact {
-    width: 100%;
-    height: 64px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--color-black);
-    color: var(--color-white);
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-}
-
 .menu-buttons {
     display:flex;
     justify-content: center;
@@ -344,6 +307,19 @@ header {
 }
 
 /* About me */
+.about-me-img {
+    width: calc(100% - 48px);
+    height: 60vh;
+    margin-left: 24px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+.about-introduction-p {
+    padding-top: 8px;
+}
+
 .light {
     margin-top: -14px;
     margin-bottom: 24px;
@@ -358,42 +334,12 @@ header {
     display: none;
 }
 
-.video-relative {
-    position: relative;
-}
-
-.video-hidden {
-    position: absolute;
-}
-
-.about-me-img {
-    width: calc(100% - 48px);
-    height: 60vh;
-    margin-left: 24px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 32px;
-}
-
-.about-cover-img {
+.question-cover-img {
     object-fit: cover;
     width: calc(100% - 48px);
-    height: 100vh;
-}
-
-#scoringtext {
-    margin-top: 32vh;
-}
-
-.about-me-line {
-    width: 100%;
-    margin-top: 24px;
-    margin-bottom: 2%;
-}
-
-.about-highlight {
-   font-weight: 500;
-   margin-inline: 10px;
+    height: 29vh;
+    margin: 0px;
+    padding-bottom: 16px;
 }
 
 .question-cover-img2 {
@@ -407,6 +353,11 @@ header {
 .question-section-wrap {
     text-align: center;
 }
+
+.about-highlight {
+    font-weight: 500;
+    margin-inline: 10px;
+ }
 
 .anwser1 {
     background-color: #57BD47;
@@ -424,10 +375,61 @@ header {
     background-color: #D62F2F;
 }
 
+.anwser1, .anwser2, .anwser3, .anwser4 {
+    font-size: 16px;
+    font-weight: 500;
+    width: calc(100% - 48px);
+    margin-inline: 24px;
+    height: 16px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
 .anwser1:hover, .anwser2:hover, .anwser3:hover, .anwser4:hover {
     opacity: 70%;
 }
-    
+
+.next {
+    width: calc(100% - 48px);
+    margin-top: 4px;
+    height: 64px;
+    border: solid;
+    border-color: var(--color-black);
+    border-radius: 5px;
+    background-color: #ffffff00;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.return {
+    height: 64px;
+    border: solid;
+    border-color: var(--color-black);
+    border-radius: 5px;
+    background-color: #ffffff00;
+    color: var(--color-black);
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+#scoringtext {
+    margin-top: 32vh;
+}
+
+.about-me-line {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 2%;
+}
+
 /* Project introduction */
 .introduction-cover-img {
     object-fit: cover;
@@ -506,6 +508,14 @@ header {
     flex-direction: row-reverse;
 }
 
+.introduction-desktop {
+    display: none;
+}
+
+.introduction-mobile {
+    display: block;
+}
+
 /* Project main */
 .project-heading {
     margin-inline: 24px;
@@ -564,16 +574,12 @@ header {
     padding-bottom: 20px;
 }
 
-.project-text-p3 {
-    padding-top: 8px;
-}
-
 .project-text-ul {
     margin-top: -20px;
 }
 
 .project-text-h2 {
-    color: #ffffff;
+    color: var(--color-white);
     padding-bottom: 10px;
 }
 
@@ -591,7 +597,7 @@ header {
 }
 
 .popup-container {
-    color: #353535;
+    color: var(--color-black);
     display: inline-block;
     position: relative;
 }
@@ -604,6 +610,14 @@ header {
     padding: 10px;
     background-color: #ffffff6a;
     border-radius: 5px;
+}
+
+.project-img-mobile {
+    display: block;
+}
+
+.project-img-desktop {
+    display: none;
 }
 
 /* Hovers */
@@ -665,43 +679,17 @@ section > div > div > a:hover {
     }
 
     /* About me */
-    .anwser1, .anwser2, .anwser3, .anwser4 {
-        font-size: 16px;
-        font-weight: 500;
-        width: calc(100% - 48px);
-        margin-inline: 24px;
-        height: 16px;
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-top: 3vh;
-        padding-bottom: 7vh;
-        color: #ffffff;
-        border-radius: 5px;
-    }
-
-   .about-cover-img {
-    width: calc(80% - 48px);
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    }
-
-    .about-end-wrapper {
+    .about-introduction-wrapper {
         display: block;
         margin-inline: 24px;
         gap: 20px;
         padding-top: 10px;
     }
 
-    .question-cover-img {
-        object-fit: cover;
-        width: calc(100% - 48px);
-        height: 29vh;
-        margin: 0px;
-        padding-bottom: 16px;
+    .about-introduction-p {
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 4px;
     }
 
     .project-item-section-flex2 {
@@ -717,36 +705,14 @@ section > div > div > a:hover {
     }
 
     /* Project */
-    .introduction-desktop {
-        display: none;
-    }
-
-    .introduction-mobile {
-        display: block;
-    }
-
     .introduction-img {
         padding-top: 20px;
         width: calc(36% - 48px);
     }
-
-    .project-img-mobile {
-        display: block;
-    }
     
-    .project-img-desktop {
-        display: none;
-    }
-
     .project-text-p1, .project-text-p2 {
         text-align: left;
         padding-left: 0px;
-    }
-
-    .project-text-p3 {
-        text-align: left;
-        padding-left: 0px;
-        padding-right: 4px;
     }
 
     .popup-content {
@@ -803,43 +769,11 @@ section > div > div > a:hover {
     }
 
     /* About me */
-    .about-cover-img {
-        width: calc(60% - 48px);
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-    }
-
-    .about-end-wrapper {
+    .about-introduction-wrapper {
         display: block;
         margin-inline: 24px;
         gap: 20px;
         padding-top: 10px;
-    }
-
-    .question-cover-img {
-        object-fit: cover;
-        width: calc(100% - 48px);
-        height: 29vh;
-        margin: 0px;
-        padding-bottom: 16px;
-    }
-
-    .anwser1, .anwser2, .anwser3, .anwser4 {
-        font-size: 16px;
-        font-weight: 500;
-        width: calc(100% - 48px);
-        margin-inline: 24px;
-        height: 16px;
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-top: 3vh;
-        padding-bottom: 7vh;
-        color: #ffffff;
-        border-radius: 5px;
     }
 
     .about-me-line {
@@ -851,25 +785,9 @@ section > div > div > a:hover {
     }
 
     /* Project */
-    .introduction-desktop {
-        display: none;
-    }
-
-    .introduction-mobile {
-        display: block;
-    }
-
     .introduction-img {
         padding-top: 20px;
         width: calc(30% - 48px);
-    }
-
-    .project-img-mobile {
-        display: block;
-    }
-    
-    .project-img-desktop {
-        display: none;
     }
 
     .popup-content {
@@ -904,43 +822,18 @@ section > div > div > a:hover {
     }    
 
     /* About me */
-    .about-cover-img {
-        width: calc(45% - 48px);
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-    }
-
-    .about-end-wrapper {
-        display: flex;
+    .about-introduction-wrapper {
+        display: grid;
         margin-inline: 24px;
         gap: 20px;
         padding-top: 10px;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr 220px;
     }
 
-    .question-cover-img {
-        object-fit: cover;
-        width: calc(100% - 48px);
-        height: 29vh;
-        margin: 0px;
-        padding-bottom: 16px;
-    }
-
-    .anwser1, .anwser2, .anwser3, .anwser4 {
-        font-size: 16px;
-        font-weight: 500;
-        width: calc(100% - 48px);
-        margin-inline: 24px;
-        height: 16px;
-        text-align: center;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-top: 3vh;
-        padding-bottom: 7vh;
-        color: #ffffff;
-        border-radius: 5px;
+    .about-introduction-p {
+        text-align: justify;
+        padding-right: 48px;
     }
 
     .about-me-line {
@@ -952,14 +845,6 @@ section > div > div > a:hover {
     }
 
     /* Project */
-    .introduction-desktop {
-        display: none;
-    }
-
-    .introduction-mobile {
-        display: block;
-    }
-
     .introduction-img {
         padding-top: 20px;
         width: calc(28% - 48px);
@@ -976,11 +861,6 @@ section > div > div > a:hover {
     .project-text-p1, .project-text-p2 {
         text-align: justify;
         padding-left: 12px;
-    }
-
-    .project-text-p3 {
-        text-align: justify;
-        padding-right: 48px;
     }
 
     .popup-content {
@@ -1024,6 +904,14 @@ section > div > div > a:hover {
     }
 
     /* About me */
+    .question-cover-img {
+        object-fit: cover;
+        width: calc(100% - 48px);
+        height: 45vh;
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
     .anwser1, .anwser2, .anwser3, .anwser4 {
         font-size: 20px;
         font-weight: 500;
@@ -1035,25 +923,8 @@ section > div > div > a:hover {
         margin-bottom: 8px;
         padding-top: 5vh;
         padding-bottom: 9vh;
-        color: #ffffff;
+        color: var(--color-white);
         border-radius: 5px;
-    }
-
-    .about-cover-img {
-        width: calc(45% - 48px);
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-    }
-
-    .question-cover-img {
-        object-fit: cover;
-        width: calc(100% - 48px);
-        height: 45vh;
-        margin: 0px;
-        padding-bottom: 16px;
     }
 
     .about-me-line {
@@ -1065,14 +936,6 @@ section > div > div > a:hover {
     }
 
     /* Project */
-    .introduction-desktop {
-        display: none;
-    }
-
-    .introduction-mobile {
-        display: block;
-    }
-
     .introduction-img {
         padding-top: 20px;
         width: calc(25% - 48px);
@@ -1103,16 +966,7 @@ section > div > div > a:hover {
     }
 
     /* About me */
-    .about-cover-img {
-        width: calc(30% - 48px);
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-    }
-
-    .about-me-line {
+   .about-me-line {
         padding-inline: 120px;
     }
 
