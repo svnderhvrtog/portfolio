@@ -345,7 +345,7 @@ header {
 .question-cover-img2 {
     object-fit: cover;
     width: calc(100% - 48px);
-    height: 58vh;
+    height: 53vh;
     margin: 0px;
     padding-bottom: 16px;
 }
@@ -361,18 +361,22 @@ header {
 
 .anwser1 {
     background-color: #57BD47;
+    margin-bottom: 8px;
 }
 
 .anwser2 {
     background-color: #2F48D6;
+    margin-bottom: 8px;
 }
 
 .anwser3 {
     background-color: #D6A92F;
+    margin-bottom: 8px;
 }
 
 .anwser4 {
     background-color: #D62F2F;
+    margin-bottom: 24px;
 }
 
 .anwser1, .anwser2, .anwser3, .anwser4 {
@@ -383,7 +387,6 @@ header {
     height: 16px;
     text-align: center;
     margin-top: 8px;
-    margin-bottom: 8px;
     padding-top: 3vh;
     padding-bottom: 7vh;
     color: var(--color-white);
@@ -907,7 +910,7 @@ section > div > div > a:hover {
     .question-cover-img {
         object-fit: cover;
         width: calc(100% - 48px);
-        height: 45vh;
+        height: 41vh;
         margin: 0px;
         padding-bottom: 16px;
     }
