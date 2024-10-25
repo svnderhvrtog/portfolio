@@ -113,6 +113,13 @@ figure {
     background-size: 400% 400%;
 }
 
+.background5 {
+    height: auto;
+    background: radial-gradient(#2b562a31, #58415532, #1f1d3341);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
 @-webkit-keyframes gradient{
     0% {
       background-position: 0 50%;
@@ -558,6 +565,16 @@ header {
     padding-bottom: 16px;
 }
 
+.project-content-gif {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.project-content-extra {
+    margin-top: 24px; 
+    margin-bottom: 24px;
+}
+
 .project-text-wrapper {
     display: flex;
     gap: 20px;
@@ -579,6 +596,12 @@ header {
 
 .project-text-ul {
     margin-top: -20px;
+}
+
+.project-text-ul2 {
+    margin-top: -20px;
+    margin-left: 23%;
+    padding-bottom: 10px;
 }
 
 .project-text-h2 {
@@ -947,6 +970,7 @@ section > div > div > a:hover {
     .popup-content {
         top: 78%;
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -987,10 +1011,14 @@ section > div > div > a:hover {
     }
 
     .introduction-img {
-        padding-top: 20px;
-        width: calc(20% - 48px);
+        padding-top: 18px;
+        width: calc(21% - 48px);
     }
     .popup-content {
         top: 82%;
+    }
+
+    .project-content-gif {
+        padding-inline: 48px;
     }
 }
