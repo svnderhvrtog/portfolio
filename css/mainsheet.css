@@ -561,14 +561,14 @@ header {
 }
 
 .project-content-imgbox {
-    width: calc(100% - 8px);
+    width: 100%;
     height: auto;
     padding-bottom: 16px;
 }
 
 .project-content-gif {
-    padding-top: 1px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 24px;
 }
 
 .project-content-extra {
