@@ -410,6 +410,7 @@ header {
     height: 64px;
     border: solid;
     border-color: var(--color-black);
+    color: var(--color-black);
     border-radius: 5px;
     background-color: #ffffff00;
     justify-content: center;
@@ -431,7 +432,7 @@ header {
 }
 
 #scoringtext {
-    margin-top: 32vh;
+    margin-top: 30vh;
 }
 
 .about-me-line {
@@ -739,6 +740,7 @@ section > div > div > a:hover {
     .project-text-p1, .project-text-p2 {
         text-align: left;
         padding-left: 0px;
+        padding-right: 0px;
     }
 
     .popup-content {
