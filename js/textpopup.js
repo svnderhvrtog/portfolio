@@ -1,13 +1,9 @@
 // Text popup
 const popupContent = document.getElementById('popupContent');
 
-document.getElementById('popupContainer').addEventListener('mouseover', showpop);
-document.getElementById('popupContainer').addEventListener('mouseout', nopop);
-
-function showpop() {
+document.getElementById('popupContainer').addEventListener('mouseover', () => {
     popupContent.style.display = 'block';
-};
-
-function nopop() {
+});
+document.getElementById('popupContainer').addEventListener('mouseout', () => {
     popupContent.style.display = 'none';
-};
+});
