@@ -122,7 +122,7 @@ figure {
 
 .background6 {
     height: auto;
-    background: radial-gradient(#18103c6d, #08062e5f, #220e3773);
+    background: radial-gradient(#04040576, #08062e5f, #160e3773);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
@@ -278,14 +278,14 @@ header {
     padding-inline: 24px;
     padding-top: 10px;
     margin-inline: 8px;
-    margin-bottom: 24px;
-    border-radius: 8px 8px 8px 8px;
+    margin-bottom: -16px;
+    border-radius: 8px 8px 0px 0px;
     color: var(--color-white);
     background-color: #35372d;
 }
 
 .code-container {
-    display: none;
+    display: block;
 }
 
 /* Tags */

@@ -10,7 +10,6 @@ document.addEventListener('click', (event) => {
         const codeId = codeDisplay.getAttribute('data-code-id');
         const codeContainer = document.querySelector(`.code-container[data-code-id="${codeId}"]`);
         const plusMinus = codeDisplay.querySelector('.plus-minus');
-
         if (codeContainer.style.display === 'none') {
             codeContainer.style.display = 'block';
             codeDisplay.style.borderRadius = '8px 8px 0px 0px';

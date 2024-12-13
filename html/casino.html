@@ -46,9 +46,9 @@
         </nav>
     </header>
     <main>
-        <img src="../images/casino/cover.jpg" alt="cover photo project carebot" class="introduction-cover-img" loading="lazy"> 
+        <img src="../images/casino/cover.jpg" alt="cover photo project casino" class="introduction-cover-img" loading="lazy"> 
         <div class="introduction-main-title">
-            <img src="../images/casino/title.png" alt="cover text with 'carebot'" class="introduction-img" loading="lazy">
+            <img src="../images/casino/title.png" alt="cover text with 'space casino'" class="introduction-img" loading="lazy">
         </div>
         <section class="introduction-section-wrapper introduction-desktop">
             <div class="introduction-text-wrapper introduction-tile-wrapper">
@@ -93,7 +93,7 @@
         </div>
         <section class="project-internal-content-wrapper project-content-wrapper">
             <p class="project-text-p2">To deepen my understanding of JavaScript, I followed a few additional courses alongside my paid education plan. One of these courses helped me to create a simple version of the casino game Blackjack. I found the game a bit too simple, so I decided to take the project a step further by upgrading the game on my own. While working on the game I found that it would be even better to build a web-based casino, and so the project was born.</p>
-            <img src="../images/casino/blackjack.gif" alt="flowchart project carebot" class="project-content-imgbox" loading="lazy">  
+            <img src="../images/casino/blackjack.gif" alt="various screens on which the game blackjack is being played" class="project-content-imgbox" loading="lazy">  
             <p class="project-text-p2">I began brainstorming possible games and features to include. Naturally, Blackjack was a must, but I wanted to expand the scope. I incorporated additional games such as a slot machine, roulette, and even the classic rock, paper, scissors. To ensure the project stayed focused and manageable, I applied the Moscow methodology, setting clear priorities and defining the most essential features for the concept as a whole.</p>
         </section>
 
@@ -102,9 +102,9 @@
             <img src="../icons/project/design.png" alt="icon illustration doodle design" class="project-content-img" width="48px" loading="lazy">
         </div>
         <section class="project-internal-content-wrapper project-content-wrapper">
-            <p class="project-text-p2">To make the casino unique, I decided to give it a cool space theme with futuristic designs for the games. For example, the playing cards would have alien-style logos, and the slot machines could feature spaceships and space fighters. I worked on the designs while coding each game, testing different ideas through trial and error to find the best look. This process helped create a fun and exciting space-themed experience for the players.</p>
-            <img src="../images/casino/designsystem-desktop-eng.png" alt="flowchart project carebot" class="project-content-imgbox project-img-desktop" loading="lazy" style="padding-block-end: 36px;">  
-            <img src="../images/casino/designsystem-mobile-eng.png" alt="flowchart project carebot" class="project-content-imgbox project-img-mobile" loading="lazy" style="padding-block-end: 24px;">  
+            <p class="project-text-p2">To make the casino unique, I decided to give it a cool space theme with futuristic designs for the games. For example, the playing cards would have alien-style logos, and the slot machines would feature spaceships and space fighters. I worked on the designs while coding each game, testing different ideas through trial and error to find the best look. This process helped create a fun and exciting space-themed experience for the players.</p>
+            <img src="../images/casino/designsystem-desktop-eng.png" alt="design system voor project casino" class="project-content-imgbox project-img-desktop" loading="lazy" style="padding-block-end: 36px;">  
+            <img src="../images/casino/designsystem-mobile-eng.png" alt="design system voor project casino" class="project-content-imgbox project-img-mobile" loading="lazy" style="padding-block-end: 24px;">  
         </section>
 
         <div class="project-internal-content-wrapper project-heading">
@@ -116,11 +116,11 @@
                 <img src="../images/casino/macbook-screens-desktop.png" alt="flowchart project carebot" class="project-content-imgbox project-img-desktop" loading="lazy" style="padding-block-end: 24px;">  
                 <img src="../images/casino/macbook-screens-mobile.png" alt="flowchart project carebot" class="project-content-imgbox project-img-mobile" loading="lazy">  
                 <p class="project-text-p2">When players first enter the casino, they are prompted to choose a username and select a profile picture. If they leave either field blank or if exceed the character limit, an error message will appear.</p>
-                <div class='code-display' data-code-id="1" style="margin-bottom: -16px; border-radius: 8px 8px 0px 0px;">
+                <div class='code-display' data-code-id="1">
                 <p>Code</p>
                 <p class="plus-minus">-</p>
             </div>
-            <div class="code-container" data-code-id="1" style="display: block;">
+            <div class="code-container" data-code-id="1">
                 <pre>
                     <code class="language-js">
 // Anonymous input check function
@@ -148,7 +148,7 @@ const submit = document.getElementById('submit').addEventListener('click', () =>
             <p class="project-text-p2">After signing up successfully, user settings and credits are stored in localStorage and updated after every game. To play, players simply place a bet, press confirm, and start. While a game is in progress, players cannot switch games or tamper with the functionality. New bets can only be placed after the current game finishes and the "place new bet" button is clicked.</p>
             <div class='code-display' data-code-id="2">
                 <p>Code</p>
-                <p class="plus-minus">+</p>
+                <p class="plus-minus">-</p>
             </div>
             <div class="code-container" data-code-id="2">
                 <pre>
@@ -180,7 +180,7 @@ function rouletteDisabled() {
             <p class="project-text-p2">All games use a random-factor to ensure fair winning chances. Payouts are adjusted based on odds. For example, in roulette, if a player selects a specific number, their chances of winning are 1 in 9, so the reward is multiplied by nine.</p>
             <div class='code-display' data-code-id="3">
                 <p>Code</p>
-                <p class="plus-minus">+</p>
+                <p class="plus-minus">-</p>
             </div>
             <div class="code-container" data-code-id="3">
                 <pre>
@@ -207,6 +207,7 @@ function checkRouletteResult(playerChoice) {
         messageElRoulette.textContent = 'You lost!';
     };
     }, 3000);
+    localStorage.credits = credits;
 };                
                     </code>
                 </pre>
@@ -218,19 +219,48 @@ function checkRouletteResult(playerChoice) {
             <img src="../icons/project/improve.png" alt="icon illustration doodle improve" class="project-content-img" width="48px" loading="lazy">
         </div>
         <section class="project-internal-content-wrapper project-content-wrapper">
-            <p class="project-text-p2">The last phase was dedicated to minor fixes, such as bugs and more in depth development of the prewritten questions and answers. As well as preparing an in-depth presentation for the stakeholders.
+            <p class="project-text-p2">Refactoring the code was absolutely necessary, as there were sections where I had repeated lines excessively. This was far from ideal, so I decided to embrace the DRY (Don't Repeat Yourself) principle as a guiding standard. Rewriting the code became an obvious step, especially since reocurring animations could be written as functions. This quickly saved me about a hundred lines of code.</p>
+            <div class='code-display' data-code-id="4">
+                <p>Code</p>
+                <p class="plus-minus">-</p>
+            </div>
+            <div class="code-container" data-code-id="4">
+                <pre>
+                    <code class="language-js">
+// Frequently used credit timeout functions
+function creditsDeposit() {
+    creditsText.style.color = 'red';
+    creditsText.textContent = `Total credits: ${credits} CR`;
+    setTimeout(() => {
+        creditsText.style.color = 'white';
+        creditsText.textContent = `Total credits: ${credits} CR`;
+    }, animationDurationShort)
+};
+
+function creditsAccumulated() {
+    creditsText.style.color = 'green';
+    creditsText.textContent = `Total credits: ${credits} CR`;
+    setTimeout(() => {
+        creditsText.style.color = 'white';
+        creditsText.textContent = `Total credits: ${credits} CR`;
+    }, animationDurationShort)
+};   
+                    </code>
+                </pre>
+            </div>
+            <p class="project-text-p2">As I continue learning PHP and MySQL, I plan to enhance the casino by implementing a real-time leaderboard. This feature will dynamically update scores, replacing the current hard-coded version in use today.
             <br>
             <br>
-            The product is consistent with the given assignment. It takes care of employees, enables them to vent, get practical hands-on tips and exercises to enhance their employee experience. Whether or not the CareBot will be able to help on a long term basis has yet to be discovered. Still, this is one of many steps toward good psychological health care at work sites.
+            Astronauts like you can enter the casino from outer space, so what are you waiting for? How many credits can you obtain?
             </p>
-            <a href="https://www.figma.com/proto/6D71iIqI7tAik6EJW4me3l/Care-Bot?page-id=201%3A191&node-id=201-1342&node-type=canvas&viewport=789%2C1015%2C0.05&t=NJrcFW3ZMAuNDnwr-1&scaling=contain&content-scaling=fixed&starting-point-node-id=201%3A1322" target=”_blank”>
+            <a href="https://sanderhartog.xyz/casino" target=”_blank”>
                 <figure>
-                    <img src="../images/carebot/prototype-eng.gif" alt="carebot prototype on iphone" class="project-content-imgbox" loading="lazy">
+                    <img src="../images/casino/prototype-eng.jpg" alt="casino prototype with iphone on space rock" class="project-content-imgbox" loading="lazy">
                 </figure>
             </a>
         </section>
         <div class="project-internal-content-wrapper">
-            <a href="select.html">
+            <a href="carebot.html">
             <h3 class="project-text-end">Next project</h3>
             </a>
         </div>
