@@ -127,6 +127,14 @@ figure {
     background-size: 400% 400%;
 }
 
+.background7 {
+    height: auto;
+    /* background: radial-gradient(#04040576, #08062e5f, #160e3773); */
+    background: radial-gradient(#44363635, #73543d35, #7c686835);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
 @-webkit-keyframes gradient{
     0% {
       background-position: 0 50%;
@@ -511,7 +519,7 @@ header {
 .introduction-tile1, .introduction-tile2 {
     width: 100vh;
     height: 240px;
-    padding: 7.6vh;
+    padding: 8.2vh;
     padding-inline: 48px;
     background-color: #ffffffb0;
 }
