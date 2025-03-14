@@ -129,8 +129,14 @@ figure {
 
 .background7 {
     height: auto;
-    /* background: radial-gradient(#04040576, #08062e5f, #160e3773); */
     background: radial-gradient(#44363635, #73543d35, #7c686835);
+    animation: gradient 20s ease infinite; 
+    background-size: 400% 400%;
+}
+
+.background8 {
+    height: auto;
+    background: radial-gradient(#2c2d3b35, #2d5b6e2a, #62654f35);
     animation: gradient 20s ease infinite; 
     background-size: 400% 400%;
 }
@@ -301,6 +307,12 @@ header {
     display: block;
 }
 
+.subtext {
+    padding-top: 2px;
+    font-size: 12px;
+    text-align: left;
+}
+
 /* Tags */
 .tag1, .tag2, .tag3, .tag4 {
     padding: 10px;
@@ -310,6 +322,13 @@ header {
     font-style: normal;
     font-size: 1rem;
     color: var(--color-black);
+    white-space: nowrap;
+}
+
+.tag-pin {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
 }
 
 .tag1 {
@@ -989,6 +1008,16 @@ section > div > div > a:hover {
         margin-inline: 16px;
     }
 
+    .project-item-section-flex-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .project-item-left {
+        width: 50%;
+        padding-bottom: 24px;
+    }
+
     .tag-container-large {
         min-width: 190px;
         max-width: 190px;
@@ -1065,7 +1094,7 @@ section > div > div > a:hover {
         max-width: 200px;
         min-height: 100%;
         max-height: 100%;
-        padding-right: 18px;
+        padding-right: 4px;
     }
 
     /* About me */
