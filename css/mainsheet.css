@@ -270,6 +270,10 @@ header {
     padding-bottom: 24px;
 }
 
+.project-item-left {
+    padding-bottom: 24px;
+}
+
 .home-project-text-wrapper {
     margin: 0%;
     padding-left: 24px;
@@ -754,7 +758,7 @@ section > div > div > a:hover {
         max-width: 204px;
         min-height: 100%;
         max-height: 100%;
-        padding-right: 18px;
+        padding-right: 8px;
     }
 
     /* Tags */
@@ -856,7 +860,7 @@ section > div > div > a:hover {
         max-width: 244px;
         min-height: 100%;
         max-height: 100%;
-        padding-right: 18px;
+        padding-right: 8px;
     }
 
     /* Tags */
@@ -924,7 +928,7 @@ section > div > div > a:hover {
         max-width: 244px;
         min-height: 100%;
         max-height: 100%;
-        padding-right: 18px;
+        padding-right: 8px;
     }
 
     /* About me */
@@ -1023,7 +1027,7 @@ section > div > div > a:hover {
         max-width: 190px;
         min-height: 100%;
         max-height: 100%;
-        padding-right: 18px;
+        padding-right: 8px;
     }
     
     /* Tags */
