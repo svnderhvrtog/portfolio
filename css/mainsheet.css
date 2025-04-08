@@ -754,8 +754,8 @@ section > div > div > a:hover {
     }
 
     .tag-container-large {
-        min-width: 204px;
-        max-width: 204px;
+        min-width: 180px;
+        max-width: 180px;
         min-height: 100%;
         max-height: 100%;
         padding-right: 8px;
@@ -1023,8 +1023,8 @@ section > div > div > a:hover {
     }
 
     .tag-container-large {
-        min-width: 190px;
-        max-width: 190px;
+        min-width: 175px;
+        max-width: 175px;
         min-height: 100%;
         max-height: 100%;
         padding-right: 8px;
@@ -1094,8 +1094,8 @@ section > div > div > a:hover {
     }
 
     .tag-container-large {
-        min-width: 200px;
-        max-width: 200px;
+        min-width: 182px;
+        max-width: 182px;
         min-height: 100%;
         max-height: 100%;
         padding-right: 4px;
